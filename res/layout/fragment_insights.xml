@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="true"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="8dp" >
+
+        <RelativeLayout
+            android:id="@+id/insights_customers_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/card" >
+
+            <TextView
+                android:id="@+id/textViewVisits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="32"
+                android:textColor="@color/grey"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/textViewVisitsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textViewVisits"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/textViewVisits"
+                android:text="@string/visits"
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+
+            <FrameLayout
+                android:id="@+id/insights_customers_separator"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/textViewVisits"
+                android:layout_marginBottom="4.5dp"
+                android:layout_marginLeft="20.5dp"
+                android:layout_marginRight="4.5dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/textViewVisitsLabel"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/textViewTimeInBusiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textViewVisits"
+                android:layout_alignBottom="@id/textViewVisits"
+                android:layout_toRightOf="@id/insights_customers_separator"
+                android:text="50"
+                android:textColor="@color/grey"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/textViewTimeInBusiness"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/textViewTimeInBusiness"
+                android:text="@string/mins"
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+
+            <ProgressBar
+                android:id="@+id/progressSpinner"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

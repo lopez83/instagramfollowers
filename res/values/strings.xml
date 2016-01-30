@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InstagramFollowers</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="text_signin">Log In</string>
+	<string name="text_signout">Log Out</string>
+	<string name="visits">Visits</string>
+	<string name="mins">Mins</string>
+	<string name="followers">Followers</string>
+	<string name="following">Following</string>
+	<string name="arenotfollowingback">Are Not following Back</string>
+	<string name="younotfollowingback">You Are Not Following Back</string>
+	
+	<string name="lost_followers">Lost Followers</string>
+	<string name="gain_followers">Gain Followers</string>
+	<string name="user_image">User Image</string>	
+	<string name="main_activity">Main Activity</string>	
+</resources>
